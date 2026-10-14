@@ -39,12 +39,24 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: 300ms;
+}
+
+header a:hover {
+  transform:translateY(-4px);
+  color:var(--secondary-color);
 }
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: 500ms;
+}
+
+main a:hover {
+  color: white;
+  background-color:#F78828;
 }
 /* end article link transitions */
 
@@ -100,6 +112,21 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+section.hero > button:hover {
+ animation: 1.8s alternate ease-in-out;
+ animation-iteration-count: infinite;
+ animation-name: grow-shrink;
+}
+
+@keyframes grow-shrink {
+  0% {scale: 100%;
+  }
+  100% {
+    scale: 120%;
+    background-color:white;
+  }
 }
 
 main article {
