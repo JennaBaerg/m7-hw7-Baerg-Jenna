@@ -40,6 +40,7 @@ header a {
   font-size: 1.5rem;
   color: var(--off-white);
   transition: 300ms;
+  transition-delay: 125ms;
 }
 
 header a:hover {
@@ -52,6 +53,7 @@ header a:hover {
 main a {
   color: var(--danger-color);
   transition: 500ms;
+  transition-delay: 25ms;
 }
 
 main a:hover {
@@ -115,7 +117,7 @@ section.hero > button {
 }
 
 section.hero > button:hover {
- animation: 1.8s alternate ease-in-out;
+ animation: 1s alternate ease-in-out;
  animation-iteration-count: infinite;
  animation-name: grow-shrink;
 }
@@ -125,7 +127,7 @@ section.hero > button:hover {
   }
   100% {
     scale: 120%;
-    background-color:white;
+    background-color: var(--warn-color);
   }
 }
 
